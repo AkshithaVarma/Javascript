@@ -10,3 +10,12 @@ console.log(someResult)
 //every method checks if all elements in the array satisfy the condition provided by the callback function. It returns true if all elements meet the condition, and false otherwise.
 const everyResult = numbers.every((number)=>number>10)
 console.log(everyResult)
+
+
+//subjects score of a student
+
+const subjectScore = [50, 45, 90, 30];
+// const result = subjectScore.every((score) => score > 40);
+const result1 = subjectScore.some((score) => score > 40);
+if (result1) console.log("Pass");
+else console.log("Fail");
